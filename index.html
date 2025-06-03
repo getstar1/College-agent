@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>School Chatbot</title>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('8066764.jpg'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+
+      h2 {
+        color: white;
+        padding: 20px;
+        text-shadow: 1px 1px 3px #000;
+      }
+
+      df-messenger {
+        --df-messenger-bot-message: #e0e0e0;
+        --df-messenger-button-titlebar-color: #4a90e2;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: black;
+        --df-messenger-user-message: #cce7ff;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Welcome to College Info Bot</h2>
+
+    <df-messenger
+      intent="WELCOME"
+      chat-title="School"
+      agent-id="c5a21d6f-9a8e-490e-930c-942adfa07135"
+      language-code="en">
+    </df-messenger>
+  </body>
+</html>
